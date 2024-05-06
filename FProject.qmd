@@ -1,0 +1,718 @@
+---
+title: "Final Project"
+format:
+  html:
+    toc: true  # Enable table of contents
+    toc-location: left  # Position the TOC on the left
+execute:
+  echo: false  # Suppress code output in the rendered document
+  warning: false  # Suppress warnings in the output
+  message: false  # Suppress messages in the output
+---
+
+*Group number: 1*
+
+*Team Members: Aakiff Panjwani, Swapnaja Kulkarni, Meghjeet Kaur Sardarni*
+
+# [**WHITE WINE QUALITY**](https://data.world/uci/wine-quality)
+
+The data sets are related to white variants of the Portuguese "Vinho Verde" wine.The sets contain physicochemical(inputs) properties of white Vinho Verdes wines and their respective sensory(output) qualities.
+
+The target variable is the quality rating of the wines, while the chemical attributes such as alcohol content, volatile acidity, citric acid, density, pH, and sulphates serve as the predictors.The target variable i.e., the quality of the wine, has been categorized into six classes (from 3 to 8) based on sensory evaluations.
+
+# About the dataset
+
+The dataset includes samples of 4898 white wines regarding the following attributes:
+
+|                      |                                                                      |
+|:------------------------:|:--------------------------------------------:|
+|    **Attributes**    |                           **Description**                            |
+|    Fixed Acidity     |       Concentration of non-volatile tartaric acid in the wine.       |
+|   Volatile Acidity   |          Concentration of volatile acetic acid in the wine.          |
+|     Citric Acid      |              Concentration of citric acid in the wine.               |
+|    Residual Sugar    | Concentration of sugar remaining after the fermentation in the wine. |
+|      Chlorides       |             Concentration of sodium chloride in the wine             |
+| Free Sulfur Dioxide  |      Concentration of free, gaseous sulfur dioxide in the wine.      |
+| Total Sulfur Dioxide |          Total concentration of sulfur dioxide in the wine.          |
+|       Density        |                         Density of the wine.                         |
+|          pH          |                         Acidity of the wine.                         |
+|      Sulphates       |           Concentration of potassium sulfate in the wine.            |
+|       Alcohol        |                     Alcohol content of the wine.                     |
+|       Quality        |              Wine quality score as assessed by experts.              |
+
+# Variables in the dataset
+
+### ***Wine Quality***
+
+```{r}
+
+options(repos = list(CRAN="http://cran.rstudio.com/"))
+library(ggplot2)
+```
+
+```{r}
+
+
+wine_data <- read.csv("C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv", sep = ";")
+
+ ggplot(wine_data, aes(x = as.factor(quality))) +  
+  geom_bar(fill = "steelblue", color = "black") +  
+  labs(title = "Distribution of Quality Scores", x = "Quality", y = "Count") +  
+  theme_minimal()
+```
+
+Most wines have a quality score of 6. No wine achieved the highest score of 10 and the poor wines got a rating of 3.
+
+### ***Acidity***
+
+#### Fixed acidity
+
+```{r}
+ggplot(wine_data, aes(x = fixed.acidity)) +
+    geom_histogram(binwidth = 0.1, fill = "skyblue", color = "black") +  # Adjust bin width for desired granularity
+    labs(title = "Distribution of Fixed Acidity", x = "Fixed Acidity", y = "Count") +  # Set title and axes labels
+    theme_minimal()
+```
+
+#### Volatile acidity
+
+```{r}
+ggplot(wine_data, aes(x = volatile.acidity)) +
+    geom_histogram(binwidth = 0.05, fill = "lightcoral", color = "black") +  
+    labs(title = "Distribution of Volatile Acidity", x = "Volatile Acidity", y = "Count") +  
+    theme_minimal()
+```
+
+#### Citric acid
+
+```{r}
+ggplot(wine_data, aes(x = citric.acid)) +
+    geom_histogram(binwidth = 0.05, fill = "blue", color = "black") +  # Adjust bin width for desired granularity
+    labs(title = "Distribution of Citric Acid", x = "Citric Acid", y = "Count") +  # Set plot title and axis labels
+    theme_minimal()
+```
+
+Fixed acidity, volatile acidity and citric acid have outliers. If those outliers are eliminated distribution of the variables may be taken to be symmetric.
+
+### Residual Sugar
+
+```{r}
+ggplot(wine_data, aes(x = residual.sugar)) +
+    geom_histogram(binwidth = 0.5, fill = "lightblue", color = "black") +  # Adjust bin width as needed
+    labs(title = "Distribution of Residual Sugar", x = "Residual Sugar", y = "Count") +  # Set plot title and axes
+    theme_minimal()
+```
+
+Wines in the data set appear to have low residual sugar concentrations.
+
+### Chlorides
+
+```{r}
+ggplot(wine_data, aes(x = chlorides)) +
+    geom_histogram(binwidth = 0.005, fill = "purple", color = "black") +  # Adjust bin width for appropriate granularity
+    labs(title = "Distribution of Chlorides", x = "Chlorides", y = "Count") +  # Set plot title and axes
+    theme_minimal()
+```
+
+Most of the wines have a Cholrides concentration between 0.001 and 0.1.
+
+### **Sulfur dioxide**
+
+#### Free Sulfur dioxide
+
+```{r}
+ggplot(wine_data, aes(x = free.sulfur.dioxide)) +
+    geom_histogram(binwidth = 2, fill = "green", color = "black") +  # Adjust bin width for appropriate granularity
+    labs(title = "Distribution of Free Sulfur Dioxide", x = "Free Sulfur Dioxide", y = "Count") +  # Set plot title and axes
+    theme_minimal()
+```
+
+Free sulfur dioxide ranges from 1.00 to 80.00.Most wines have lower free sulfur dioxide levels
+
+#### Total Sulfur dioxide
+
+```{r}
+ggplot(wine_data, aes(x = total.sulfur.dioxide)) +
+    geom_histogram(binwidth = 5, fill = "pink", color = "black") +  # Adjust bin width for desired granularity
+    labs(title = "Distribution of Total Sulfur Dioxide", x = "Total Sulfur Dioxide", y = "Count") +  # Plot title and axes
+    theme_minimal()
+```
+
+Majority of the wine have Total sulfur dioxide concentration between 100 and 250.
+
+### Density
+
+```{r}
+ggplot(wine_data, aes(x = density)) +
+    geom_histogram(binwidth = 0.0001, fill = "yellow", color = "green") +
+    labs(title = "Distribution of Density", x = "Density", y = "Count") +
+    theme_minimal()
+```
+
+Most wines have density between 0.99 and 1.00.
+
+### pH
+
+```{r}
+ggplot(wine_data, aes(x = pH)) +
+    geom_histogram(binwidth = 0.1, fill = "red", color = "black") +  # Adjust `binwidth` as needed
+    labs(title = "Distribution of pH values", x = "pH", y = "Count") +
+    theme_minimal()
+```
+
+Most frequent pH values in the sample fall around 3.2. There are also some measurements around 3.0 and 3.5 pH
+
+### Suphates
+
+```{r}
+ggplot(wine_data, aes(x = sulphates)) +
+    geom_histogram(binwidth = 0.05, fill = "lightgreen", color = "black") +  # Adjust `binwidth` for desired granularity
+    labs(title = "Distribution of Sulphates", x = "Sulphates", y = "Count") +  # Set plot title and axes
+    theme_minimal()
+```
+
+Most of the wines have suplhates between 0.3 and 0.6, indicating most wines have lower sulphate content.
+
+### Alcohol
+
+```{r}
+ggplot(wine_data, aes(x = alcohol)) +
+    geom_histogram(binwidth = 0.2, fill = "orange", color = "black") +
+    labs(title = "Distribution of Alcohol", x = "Alcohol", y = "Count") +
+    theme_minimal()
+```
+
+The alcohol content of the wines ranges from 8.40 to 14.90.
+
+# Correlation of the Features
+
+The physicochemical features in the dataset don't have a strong correlation with the output feature, there are some significant correlations between certain physicochemical features.
+
+```{r}
+library(tidyverse)
+
+```
+
+```{r}
+library(corrplot) 
+  variables <- c("fixed.acidity", "volatile.acidity", "citric.acid",
+                 "residual.sugar", "chlorides", "free.sulfur.dioxide",
+                 "total.sulfur.dioxide", "density", "pH", "sulphates", 
+                 "alcohol", "quality")
+  correlation_data <- wine_data %>%
+    select(all_of(variables))
+  correlation_matrix <- cor(correlation_data, use = "complete.obs") 
+  # Plot the correlation matrix as a heatmap
+  corrplot(correlation_matrix, 
+           method = "color",  # Use colors to represent correlation coefficients
+           type = "upper",    # Display only the upper triangle to avoid redundancy
+           tl.col = "black",  # Set the color of text labels
+           tl.srt = 45,       # Rotate text labels for better readability
+           addCoef.col = "black",  # Add the correlation coefficients to the plot
+           col = colorRampPalette(c("red", "white", "blue"))(200),  # Custom color scheme
+           order = "hclust")  # Order by hierarchical clustering for better interpretation
+
+```
+
+The physicochemical features in the dataset don't have a strong correlation with the Sensory feature .
+
+-   A correlation coefficient of 1 indicates a perfect positive correlation, meaning as the value of one feature increases, the value of the other feature also increases.
+
+-   A correlation coefficient of -1 indicates a perfect negative correlation, meaning as the value of one feature increases, the value of the other feature decreases.
+
+-   A correlation coefficient of 0 indicates no correlation between the two features.
+
+Missing Values:
+
+The dataset comprising 4898 entries of white wine does not contain any missing values. This implies that all the values for the different features in the dataset were recorded, making it possible to carry out accurate and reliable analyses.
+
+# **Accuracy**
+
+```{r}
+# List of all required packages
+required_packages <- c("rpart", "plotly", "rattle")
+
+# Function to install if missing and then load without producing output
+install_and_load <- function(pkg) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)  # Install only if not already installed
+  }
+  invisible(library(pkg, character.only = TRUE))  # Load without visible output
+}
+
+# Apply the function to each required package, suppressing output
+invisible(lapply(required_packages, install_and_load))  # This should suppress output
+
+```
+
+```{r}
+
+library(psych)
+library(GGally)
+library(randomForest)
+library(caret)
+library(rpart)
+library(rpart.plot)
+library(tidyverse)
+library(ggplot2)
+library(plotly)
+library(rattle)
+library(gridExtra)
+```
+
+```{r}
+###Read the CSV file into a data frame
+
+df_whitewine <- read.csv("C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv", sep = ";", header = TRUE)
+
+df_whitewine <- df_whitewine %>%
+  rename(
+    fixed_acidity = `fixed.acidity`,
+    volatile_acidity = `volatile.acidity`,
+    citric_acid = `citric.acid`,
+    residual_sugar = `residual.sugar`,
+    chlorides = `chlorides`,
+    free_sulfur_dioxide = `free.sulfur.dioxide`,
+    total_sulfur_dioxide = `total.sulfur.dioxide`,
+    density = `density`,
+    pH = `pH`,
+    sulphates = `sulphates`,
+    alcohol = `alcohol`,
+    quality = `quality`
+  )
+```
+
+```{r,results = 'hide'}
+head(df_whitewine,2)
+
+```
+
+```{r,results = 'hide'}
+sapply(df_whitewine,class)
+
+```
+
+```{r,results = 'hide'}
+summary(df_whitewine)
+```
+
+```{r}
+#distribution of quality
+quality_freq <- as.data.frame(table(df_whitewine$quality))
+colnames(quality_freq) <- c("quality", "frequency")
+
+plot_ly(data = quality_freq, x = ~quality, y = ~frequency, type = "bar", name = "Frequency", marker = list(color = "orange")) %>%
+  layout(
+    title = "Data Available by Wine Class",
+    xaxis = list(title = "Quality"),
+    yaxis = list(title = "Frequency")
+  ) %>%
+  add_lines(x = ~quality, y = ~frequency, type = "scatter", mode = "lines", name = "Smooth Curve", line = list(color = "brown", shape = "spline"))
+```
+
+Our data is most abundant in the range of 5 to 7, with the majority occurring at 6. This graph illustrates this. For 4 and 8, we do have some data accessible, but not much for 3 and 9.Three wines are the lowest quality, while nine wines are the highest.Determine that the majority of our wines are of mediocre quality. Currently attempting to comprehend the various classification systems for white wines, including those based on alcohol percentage, volatile acidity, sugar content, chloride, sulphates, etc. We utilize classification methods to predict wine quality since we have classes for it.\
+\
+The decision tree model is where we start. Of our data, 80% are used for training and 20% are used for testing.
+
+### Decision Tree Classification
+
+```{r}
+set.seed(100)
+data_set_size = floor(nrow(df_whitewine)*0.80) #use 20% of data for testing
+index <- sample(1:nrow(df_whitewine),size = data_set_size) #get a sample for row size, dataset size, etc
+training_data <- df_whitewine[index,]
+testing_data <- df_whitewine[-index,]
+```
+
+```{r}
+dcsntree <- rpart(quality ~ ., data = training_data)
+```
+
+Original Tree:
+
+```{r}
+fancyRpartPlot(dcsntree)
+```
+
+```{r}
+df_whitewine_pred <- predict(dcsntree, testing_data)
+```
+
+```{r}
+levels_actual <- levels(as.factor(testing_data$quality))
+levels_predicted <- levels(as.factor(df_whitewine_pred))
+
+#print("Levels in actual data:",print(levels_actual))
+#print("Levels in predicted data:", print(levels_predicted))
+
+#correct numerical levels to integer levels
+df_whitewine_pred_factor <- cut(df_whitewine_pred, breaks = length(levels_actual), labels = levels_actual)
+```
+
+```{r,results = 'hide'}
+#accuracy, specificity, precision ,etc of the model
+conf_dcsntree <- confusionMatrix(as.factor(testing_data$quality), df_whitewine_pred_factor, mode = "everything")
+print(conf_dcsntree)
+
+
+```
+
+```{r}
+# Evaluate accuracy
+accuracy <- sum(df_whitewine_pred_factor == testing_data$quality) / nrow(testing_data)
+print(paste("Decision Tree Accuracy:", round(accuracy * 100, 2), "%"))
+```
+
+Pruned Tree:
+
+```{r}
+#Let see if pruning the decision tree improves the accuracy score, 
+
+# Prune the decision tree by adjusting the complexity parameter
+dcsntree_pruned <- prune(dcsntree, cp = 0.01)  # Adjust cp value as needed
+
+# Visualize the pruned decision tree
+fancyRpartPlot(dcsntree_pruned)
+```
+
+```{r}
+#b.
+# Prediction using pruned decision tree
+df_whitewine_pred_pruned <- predict(dcsntree_pruned, testing_data)
+
+# Correct numerical levels to integer levels
+df_whitewine_pred_factor_pruned <- cut(df_whitewine_pred_pruned, breaks = length(levels_actual), labels = levels_actual)
+
+# Calculate accuracy of the pruned decision tree
+accuracy_pruned <- sum(df_whitewine_pred_factor_pruned == as.factor(testing_data$quality)) / length(testing_data$quality)
+print(paste("Accuracy of the pruned decision tree:", round(accuracy_pruned*100,2), "%"))
+```
+
+Without pruning, the model has an accuracy of 24.49% with a 95% Confidence Interval.Upon pruning, the accuracy score stays unchanged. We also attempt to use random forest classification because the accuracy is poor to see whether it increases. For the random forest model, we utilize the same proportion of training and testing data.
+
+### Random Forest Classification
+
+```{r}
+df_whitewine <- read.csv("C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv", sep = ";", header = TRUE)
+
+```
+
+```{r}
+df_whitewine <- df_whitewine %>%
+  rename(
+    fixed_acidity = `fixed.acidity`,
+    volatile_acidity = `volatile.acidity`,
+    citric_acid = `citric.acid`,
+    residual_sugar = `residual.sugar`,
+    chlorides = `chlorides`,
+    free_sulfur_dioxide = `free.sulfur.dioxide`,
+    total_sulfur_dioxide = `total.sulfur.dioxide`,
+    density = `density`,
+    pH = `pH`,
+    sulphates = `sulphates`,
+    alcohol = `alcohol`,
+    quality = `quality`
+  )
+```
+
+```{r}
+#make quality column a factor
+df_whitewine$quality = as.factor(df_whitewine$quality)
+```
+
+```{r,results = 'hide'}
+#-training data-
+
+data_set_size = floor(nrow(df_whitewine)*0.80) #use 20% of data for testing
+index <- sample(1:nrow(df_whitewine),size = data_set_size) #get a sample for row size, dataset size, etc
+training_data_rf <- df_whitewine[index,]
+testing_data_rf <- df_whitewine[-index,]
+dim(training_data_rf)
+dim(testing_data_rf)
+```
+
+```{r,results = 'hide'}
+#Random Forest classification
+#Fit random forest (rf) model
+random_forest_model <- randomForest(formula = quality ~ ., data = training_data_rf, mtry=4, ntree=2001, importance=TRUE)
+
+#analyze results
+random_forest_model
+```
+
+```{r}
+#display accuracy of random forest model
+oob_error_rate <- random_forest_model$err.rate[nrow(random_forest_model$err.rate), "OOB"]
+accuracy <- 1 - oob_error_rate
+print(paste("Accuracy of RandomForest Model:", round(accuracy * 100, 2), "%"))
+
+```
+
+*Random Forrest model*
+
+```{r}
+plot(random_forest_model)
+
+```
+
+Error values for each of the 20001 decision trees are shown in the graphic. We conclude that the Random Forest model's 69% accuracy outperforms the decision tree model. Therefore, the random forest model can be used to classify the data. We also attempt to investigate and contrast the predictions made by the random forest algorithm with the real data that is available for testing_data.
+
+*Predicting using rf model*
+
+```{r}
+#Prediction using rf model
+wine_rf_result <- data.frame(testing_data_rf$quality, predict(random_forest_model, testing_data_rf[,1:11], type= "response"))
+conf_matrix <- table(wine_rf_result$testing_data_rf.quality, wine_rf_result$predict.random_forest_model..testing_data_rf...1.11...type....response..)
+conf_matrix_matrix <- as.matrix(conf_matrix)
+
+#plot the graph
+plot(wine_rf_result)
+```
+
+We generate a figure showing the actual and anticipated values for the random forest quality values.When we look at the largest square of 6, we can see that although the actual value for quality was 6, the values were expected to be between 4 and 8. because the accuracy of our model is only 69%.
+
+*Confusion matrix*
+
+```{r}
+#confusion matrix heat map
+plot_ly(z = ~conf_matrix_matrix, colorscale = "Viridis") %>%
+  add_heatmap(x = rownames(conf_matrix_matrix), y = colnames(conf_matrix_matrix)) %>%
+  layout(title = "Confusion Matrix Heatmap",
+         xaxis = list(title = "Actual Quality"),
+         yaxis = list(title = "Predicted Quality"))
+```
+
+We create a heat map that compares the test data's predictions to the actual wine quality in order to provide a more in-depth analysis. We find that, because we have more data available for those wines, we can forecast quality classes 5 through 7 more accurately. The precision decreases as we get farther from the center.
+
+```{r}
+#variable importance 
+varImpPlot(random_forest_model)
+```
+
+The MeanDecreaseGINI figure (shown on the right) indicates that the most significant variables in the model are chemical parameters like density and volatile acidity, in that order.The chemical characteristics that, if eliminated, have the greatest influence on the model accuracy reduction are displayed in the MeanDecreaseAccuracy plot (on the left).
+
+#### Conclusion
+
+With a good accuracy of 69%, RandomForest is a good classifier for this problem. Thus, we can now incorporate fresh wine with chemical characteristics into our RF classifier to forecast the wine's quality. The most significant factor in determining wine quality is its chemical makeup. We should be aware that our training data only includes white wine and that the model can only predict white wine—not other types—despite the fact that it considers a variety of factors. Therefore, based on this data, we might not be able to forecast a red wine. We will need to gather more information and create a new classification model in order to do that.
+
+### **Shinny App**
+
+![](images/shinyapp_snapshot 1.png){fig-align="left"}
+
+![](images/shinyapp_snapshot 2.png)
+
+#### Conclusion
+
+This ShipApp creates an interactive tool for a white wine manufacturer. It allows them to adjust the components and determine the quality of wines. Key sliders, such as Alcohol and Volatile Acidity, are significant indicators of wine quality. By manipulating these sliders, you can observe how they impact the wine's quality category.
+
+# **Principal Component Analysis (PCA)**
+
+Perform dimensionality reduction on the existing 11 features and find out how many principal components can capture most of the information. Also visualise the first 2 principal components and form clusters, if possible.
+
+```{r}
+df <- read.csv("C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv", sep = ";", header = TRUE)
+
+```
+
+```{r,results = 'hide'}
+str(df)
+
+```
+
+The dataset is unbalanced because of the uneven class distribution. Additionally, we need to make sure that the features are scaled and that the data is balanced for PCA to function correctly.
+
+```{r,results = 'hide'}
+df <- df[(df$quality %in% c(5,6,7)), ]
+df$quality <- factor(df$quality)
+str (df)
+
+```
+
+Distribution of the wine classes
+
+```{r}
+table(df$quality)
+```
+
+Now, notice that there are 3 classes of the Wine Quality variable and the distribution is almost equal.
+
+```{r}
+wineClasses <- factor(df$quality)
+pairs(df[, -which(names(df) == "quality")], col = wineClasses, 
+      upper.panel = NULL, pch = 16, cex = 0.5)
+
+# Add legend
+legend("topright", bty = "n", legend = levels(wineClasses), pch = 16, 
+       col = rainbow(length(levels(wineClasses))), xpd = TRUE, cex = 1.5, y.intersp = 0.5)
+```
+
+Applying PCA
+
+```{r}
+df_PCA <- prcomp(df[, 1:11],center=TRUE,scale=TRUE)
+summary(df_PCA)
+```
+
+The dataset with its eleven features is changed into a new dataset with its eleven principal components once PCA is applied.\
+\
+The summary statistics demonstrate how the overall variation in the data is explained by each primary component.
+
+```{r}
+plot(df_PCA$x[,1:2], col = wineClasses)
+
+```
+
+```{r}
+library(devtools)
+
+if(!require(ggbiplot)){
+  install_github("vqv/ggbiplot")
+  library(ggbiplot)
+}
+
+ggbiplot(df_PCA,ellipse=TRUE,  groups=wineClasses)
+std_dev <- df_PCA$sdev
+```
+
+The first two Principal Components, PC1 and PC2, are displayed in the plot above. Together, these two major components account for roughly 44% of the data's volatility. The first two principal components are insufficient to create clusters or generate certain visualizations that reveal a great deal about the dataset because it is a relatively complex dataset.
+
+Scree Plots
+
+Making a Scree plot to visualize the proportion of variance explained and the cumulative proportion explained by the individual Principal Components.
+
+```{r}
+#compute proportion of variance
+pr_var <- std_dev^2
+pve <- pr_var/sum(pr_var)
+
+
+library(gridExtra)
+x = 1:length(pve)
+g1 =qplot(x,pve, xlab="Principal Component",
+          ylab="Proportion of Variance Explained") +
+  geom_line()+geom_point(shape=21,fill="red",cex=3)
+
+g2 =qplot(x,cumsum(pve), xlab="Principal Component",
+          ylab="Cumulative Proportion of Variance Explained",
+          main="  ",ylim=c(0,1))+
+  geom_line()+geom_point(shape=21,fill="red",cex=3)
+
+grid.arrange(g1,g2, nrow=1)
+```
+
+We can observe how the variance explanation varies as the number of Principal Components increases from the two graphs above. We can account for 80% of the variance in the data with just 6 Principal Components. which is roughly equivalent to half of the original dataset's characteristics.
+
+# Clusterization
+
+```{r}
+# List of required packages
+required_packages <- c("readr", "factoextra", "ggplot2", "dplyr")
+
+# Function to install if missing and then load without output
+install_and_load <- function(pkg) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)  # Install only if not installed
+  }
+  library(pkg, character.only = TRUE)  # Load package
+}
+
+# Apply the function to each package with `invisible()` to suppress output
+invisible(lapply(required_packages, install_and_load))  # This should suppress output
+
+```
+
+```{r}
+wine_data <- read.csv("C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv", sep = ";")
+
+```
+
+```{r}
+features <- wine_data %>%select(fixed.acidity:alcohol)
+
+```
+
+```{r}
+scaled_features <- scale(features)
+
+```
+
+```{r}
+set.seed(42)
+wss_results <- factoextra::fviz_nbclust(scaled_features, kmeans, method = "wss")
+# Plot within-cluster sum of squares
+
+```
+
+Elbow plot
+
+```{r}
+##Plot WCSS vs k to visually determine optimal k
+
+plot(wss_results)
+```
+
+```{r}
+# Example (replace with your chosen k based on elbow plot)
+k <- 3  # Replace with your chosen k value
+```
+
+```{r}
+# K-means clustering with chosen k and multiple initializations
+kmeans_model <- kmeans(scaled_features, centers = k, nstart = 25)
+```
+
+```{r}
+# Assign cluster labels to data points
+wine_data$cluster <- as.factor(kmeans_model$cluster)
+```
+
+CLuster plot
+
+```{r}
+# Cluster analysis - visualize clusters
+factoextra::fviz_cluster(
+  kmeans_model,
+  data = scaled_features,
+  geom = "point",
+  ellipse.type = "convex",
+  palette = "jco",
+  ggtheme = theme_minimal()
+)
+```
+
+```{r}
+# Cluster analysis - calculate means and standard deviations
+cluster_summary <- wine_data %>%
+  group_by(cluster) %>%
+  dplyr::summarize(
+    across(
+      fixed.acidity:alcohol,
+      \(x) mean(x, na.rm = TRUE)  # Correct use of lambda function
+    ),
+    mean_quality = mean(quality, na.rm = TRUE),
+    sd_quality = sd(quality, na.rm = TRUE)
+  )
+
+```
+
+Quality Distribution across clusters
+
+```{r}
+ggplot(wine_data, aes(x = cluster, y = quality, fill = cluster)) +
+  geom_boxplot() +
+  labs(title = "Quality Distribution Across Clusters") +
+  theme_minimal()
+```
+
+*Summary of all the Clusters*
+
+```{r}
+# Print cluster summary
+print(cluster_summary)
+```
+
+# **Citation**
+
+***Wine Quality - dataset by uci*****. (n.d.). Data.world. https://data.world/uci/wine-quality**
+
+‌

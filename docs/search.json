@@ -1,0 +1,303 @@
+[
+  {
+    "objectID": "Project.html",
+    "href": "Project.html",
+    "title": "Mid Project",
+    "section": "",
+    "text": "Group Number: 26\nThe data that I have used for my redesign is from the National Highway Traffic Safety Administration (NHTSA). Which was established within the Department of Transportation by the Highway Safety Act of 1970 to help reduce the mounting number of deaths, injuries, and economic losses resulting from motor vehicle crashes on the nation’s highways.\nThe data set used in these designs is from the Fatality Analysis Reporting System. FARS is a nationwide census providing NHTSA, Congress, and the American public with yearly data regarding fatal injuries suffered in motor vehicle traffic crashes [1]. FARS includes data on all fatal traffic crashes within the 50 states and Washington, DC. For the data to be included, FARS in a crash must involve a motor vehicle traveling in a traffic way customarily open to the public and must result in the death of the occupant of the vehicle or a non occupant within 30 days of the crash.\nFor this project, I have considered the reports for the DMV Area (Washington, DC, Maryland, Virginia, and West Virginia) for the years 2021, 2018, and 1988. The data used reports the number of persons who died as a result of fatal traffic accidents, segmented by the sex of the victim, i.e., male, female, and unsupported (when gender cannot be identified)."
+  },
+  {
+    "objectID": "Project.html#bad-graph",
+    "href": "Project.html#bad-graph",
+    "title": "Mid Project",
+    "section": "Bad Graph",
+    "text": "Bad Graph\n\n\n\n\n\nHere are the reasons why we consider this to be a bad graph:\n\nWhen you look at the chart, your eyes look straight at the colors used in it. It looks appealing, but we don’t know what these colors represent in the chart.\nThe main reason we use graphs is to let the data do the talking. Graphs of data should tell us about the values involved and help us make accurate comparisons between these values. Which I find missing in this case.\nDetermining the values of each slice represented is very hard.\nIdentifying even the smallest of the values in the graph is tricky.\nDifferentiating between the regions (the circle) is next to impossible here."
+  },
+  {
+    "objectID": "Project.html#redesign-1",
+    "href": "Project.html#redesign-1",
+    "title": "Mid Project",
+    "section": "Redesign 1",
+    "text": "Redesign 1\nPlot 1:\n\n\n\n\n\n\nPlot 2:\n\n\n\n\n\n\nPlot 3:\n\n\n\n\n\n\nWhy Redesign 1 is better than the Bad Graph?\nRedesing 1 with the three plots included in it is a better way of representing the data. Here, the States (x axis) can be compared against each other on the basis of gender or on the basis of specific years. Each gender has its own segregation against the count on the Y axis. The colors uniquely identify each gender, and it also has a small color characteristic box displayed on the right side of the graph. Apart from each bar being plotted exactly at the same level of its count, they are also interactive. When we hover at the top edge of the edge it shows the count that it is being represented against."
+  },
+  {
+    "objectID": "Project.html#redesign-2",
+    "href": "Project.html#redesign-2",
+    "title": "Mid Project",
+    "section": "Redesign 2",
+    "text": "Redesign 2\nPlot 4:\n\n\n\n\n\n\nPlot 5:\n\n\n\n\n\n\nPlot 6:\n\n\n\n\n\n\nWhy Redesign 2 is better than the Bad Graph?\nThe second type of visualization used for redesigning the Bad Graph is a stacked bar.The states are represented on the x-axis and the count on the y-axis. Each gender has been stacked, giving us a clear understanding of the number of people being represented by that specific gender. Let us look at one of the scenarios here. In the year 1988, Maryland had a count of male 562, female 219, and unsupported 0. First, the male count has been plotted, i.e., till 562, then the female count has been plotted for 219, which ends at 781 (562 + 219). The unsupported will be plotted from the end of Female. This makes it very easy to compare the values against each category. It also helps in understanding the trend."
+  },
+  {
+    "objectID": "Project.html#video-presentation",
+    "href": "Project.html#video-presentation",
+    "title": "Mid Project",
+    "section": "Video Presentation:",
+    "text": "Video Presentation:"
+  },
+  {
+    "objectID": "Project.html#citation",
+    "href": "Project.html#citation",
+    "title": "Mid Project",
+    "section": "Citation",
+    "text": "Citation\nNational Highway Traffic Safety Administration. (2023, May 16). Fatal traffic accidents: persons killed: Persons killed, by genderMale, Female, Not Supported, 1988 - 2021. [Data set]. Sage Data. Sage Publishing Ltd. https://doi.org/10.6068/DP18E0AB5BDAB15\n[1]: NHTSA. (2016, November 14). NHTSA. https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars"
+  },
+  {
+    "objectID": "FProject.html",
+    "href": "FProject.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "Group number: 1\nTeam Members: Aakiff Panjwani, Swapnaja Kulkarni, Meghjeet Kaur Sardarni\n\nWHITE WINE QUALITY\nThe data sets are related to white variants of the Portuguese “Vinho Verde” wine.The sets contain physicochemical(inputs) properties of white Vinho Verdes wines and their respective sensory(output) qualities.\nThe target variable is the quality rating of the wines, while the chemical attributes such as alcohol content, volatile acidity, citric acid, density, pH, and sulphates serve as the predictors.The target variable i.e., the quality of the wine, has been categorized into six classes (from 3 to 8) based on sensory evaluations.\n\n\nAbout the dataset\nThe dataset includes samples of 4898 white wines regarding the following attributes:\n\n\n\n\n\n\n\nAttributes\nDescription\n\n\nFixed Acidity\nConcentration of non-volatile tartaric acid in the wine.\n\n\nVolatile Acidity\nConcentration of volatile acetic acid in the wine.\n\n\nCitric Acid\nConcentration of citric acid in the wine.\n\n\nResidual Sugar\nConcentration of sugar remaining after the fermentation in the wine.\n\n\nChlorides\nConcentration of sodium chloride in the wine\n\n\nFree Sulfur Dioxide\nConcentration of free, gaseous sulfur dioxide in the wine.\n\n\nTotal Sulfur Dioxide\nTotal concentration of sulfur dioxide in the wine.\n\n\nDensity\nDensity of the wine.\n\n\npH\nAcidity of the wine.\n\n\nSulphates\nConcentration of potassium sulfate in the wine.\n\n\nAlcohol\nAlcohol content of the wine.\n\n\nQuality\nWine quality score as assessed by experts.\n\n\n\n\n\nVariables in the dataset\n\nWine Quality\n\n\n\n\n\nMost wines have a quality score of 6. No wine achieved the highest score of 10 and the poor wines got a rating of 3.\n\n\nAcidity\n\nFixed acidity\n\n\n\n\n\n\n\nVolatile acidity\n\n\n\n\n\n\n\nCitric acid\n\n\n\n\n\nFixed acidity, volatile acidity and citric acid have outliers. If those outliers are eliminated distribution of the variables may be taken to be symmetric.\n\n\n\nResidual Sugar\n\n\n\n\n\nWines in the data set appear to have low residual sugar concentrations.\n\n\nChlorides\n\n\n\n\n\nMost of the wines have a Cholrides concentration between 0.001 and 0.1.\n\n\nSulfur dioxide\n\nFree Sulfur dioxide\n\n\n\n\n\nFree sulfur dioxide ranges from 1.00 to 80.00.Most wines have lower free sulfur dioxide levels\n\n\nTotal Sulfur dioxide\n\n\n\n\n\nMajority of the wine have Total sulfur dioxide concentration between 100 and 250.\n\n\n\nDensity\n\n\n\n\n\nMost wines have density between 0.99 and 1.00.\n\n\npH\n\n\n\n\n\nMost frequent pH values in the sample fall around 3.2. There are also some measurements around 3.0 and 3.5 pH\n\n\nSuphates\n\n\n\n\n\nMost of the wines have suplhates between 0.3 and 0.6, indicating most wines have lower sulphate content.\n\n\nAlcohol\n\n\n\n\n\nThe alcohol content of the wines ranges from 8.40 to 14.90.\n\n\n\nCorrelation of the Features\nThe physicochemical features in the dataset don’t have a strong correlation with the output feature, there are some significant correlations between certain physicochemical features.\n\n\n\n\n\nThe physicochemical features in the dataset don’t have a strong correlation with the Sensory feature .\n\nA correlation coefficient of 1 indicates a perfect positive correlation, meaning as the value of one feature increases, the value of the other feature also increases.\nA correlation coefficient of -1 indicates a perfect negative correlation, meaning as the value of one feature increases, the value of the other feature decreases.\nA correlation coefficient of 0 indicates no correlation between the two features.\n\nMissing Values:\nThe dataset comprising 4898 entries of white wine does not contain any missing values. This implies that all the values for the different features in the dataset were recorded, making it possible to carry out accurate and reliable analyses.\n\n\nAccuracy\n\n\n\n\n\n\nOur data is most abundant in the range of 5 to 7, with the majority occurring at 6. This graph illustrates this. For 4 and 8, we do have some data accessible, but not much for 3 and 9.Three wines are the lowest quality, while nine wines are the highest.Determine that the majority of our wines are of mediocre quality. Currently attempting to comprehend the various classification systems for white wines, including those based on alcohol percentage, volatile acidity, sugar content, chloride, sulphates, etc. We utilize classification methods to predict wine quality since we have classes for it.\n\nThe decision tree model is where we start. Of our data, 80% are used for training and 20% are used for testing.\n\nDecision Tree Classification\nOriginal Tree:\n\n\n\n\n\n\n\n[1] \"Decision Tree Accuracy: 24.49 %\"\n\n\nPruned Tree:\n\n\n\n\n\n\n\n[1] \"Accuracy of the pruned decision tree: 24.49 %\"\n\n\nWithout pruning, the model has an accuracy of 24.49% with a 95% Confidence Interval.Upon pruning, the accuracy score stays unchanged. We also attempt to use random forest classification because the accuracy is poor to see whether it increases. For the random forest model, we utilize the same proportion of training and testing data.\n\n\nRandom Forest Classification\n\n\n[1] \"Accuracy of RandomForest Model: 69.09 %\"\n\n\nRandom Forrest model\n\n\n\n\n\nError values for each of the 20001 decision trees are shown in the graphic. We conclude that the Random Forest model’s 69% accuracy outperforms the decision tree model. Therefore, the random forest model can be used to classify the data. We also attempt to investigate and contrast the predictions made by the random forest algorithm with the real data that is available for testing_data.\nPredicting using rf model\n\n\n\n\n\nWe generate a figure showing the actual and anticipated values for the random forest quality values.When we look at the largest square of 6, we can see that although the actual value for quality was 6, the values were expected to be between 4 and 8. because the accuracy of our model is only 69%.\nConfusion matrix\n\n\n\n\n\n\nWe create a heat map that compares the test data’s predictions to the actual wine quality in order to provide a more in-depth analysis. We find that, because we have more data available for those wines, we can forecast quality classes 5 through 7 more accurately. The precision decreases as we get farther from the center.\n\n\n\n\n\nThe MeanDecreaseGINI figure (shown on the right) indicates that the most significant variables in the model are chemical parameters like density and volatile acidity, in that order.The chemical characteristics that, if eliminated, have the greatest influence on the model accuracy reduction are displayed in the MeanDecreaseAccuracy plot (on the left).\n\nConclusion\nWith a good accuracy of 69%, RandomForest is a good classifier for this problem. Thus, we can now incorporate fresh wine with chemical characteristics into our RF classifier to forecast the wine’s quality. The most significant factor in determining wine quality is its chemical makeup. We should be aware that our training data only includes white wine and that the model can only predict white wine—not other types—despite the fact that it considers a variety of factors. Therefore, based on this data, we might not be able to forecast a red wine. We will need to gather more information and create a new classification model in order to do that.\n\n\n\nShinny App\n\n\n\n\n\n\n\nConclusion\nThis ShipApp creates an interactive tool for a white wine manufacturer. It allows them to adjust the components and determine the quality of wines. Key sliders, such as Alcohol and Volatile Acidity, are significant indicators of wine quality. By manipulating these sliders, you can observe how they impact the wine’s quality category.\n\n\n\n\nPrincipal Component Analysis (PCA)\nPerform dimensionality reduction on the existing 11 features and find out how many principal components can capture most of the information. Also visualise the first 2 principal components and form clusters, if possible.\nThe dataset is unbalanced because of the uneven class distribution. Additionally, we need to make sure that the features are scaled and that the data is balanced for PCA to function correctly.\nDistribution of the wine classes\n\n\n\n   5    6    7 \n1457 2198  880 \n\n\nNow, notice that there are 3 classes of the Wine Quality variable and the distribution is almost equal.\n\n\n\n\n\nApplying PCA\n\n\nImportance of components:\n                          PC1    PC2    PC3     PC4     PC5     PC6     PC7\nStandard deviation     1.7998 1.2483 1.0932 1.00450 0.99676 0.97240 0.85495\nProportion of Variance 0.2945 0.1416 0.1086 0.09173 0.09032 0.08596 0.06645\nCumulative Proportion  0.2945 0.4361 0.5448 0.63649 0.72681 0.81277 0.87922\n                           PC8     PC9    PC10    PC11\nStandard deviation     0.77233 0.64862 0.53932 0.14328\nProportion of Variance 0.05423 0.03825 0.02644 0.00187\nCumulative Proportion  0.93344 0.97169 0.99813 1.00000\n\n\nThe dataset with its eleven features is changed into a new dataset with its eleven principal components once PCA is applied.\n\nThe summary statistics demonstrate how the overall variation in the data is explained by each primary component.\n\n\n\n\n\n\n\n\n\n\nThe first two Principal Components, PC1 and PC2, are displayed in the plot above. Together, these two major components account for roughly 44% of the data’s volatility. The first two principal components are insufficient to create clusters or generate certain visualizations that reveal a great deal about the dataset because it is a relatively complex dataset.\nScree Plots\nMaking a Scree plot to visualize the proportion of variance explained and the cumulative proportion explained by the individual Principal Components.\n\n\n\n\n\nWe can observe how the variance explanation varies as the number of Principal Components increases from the two graphs above. We can account for 80% of the variance in the data with just 6 Principal Components. which is roughly equivalent to half of the original dataset’s characteristics.\n\n\nClusterization\nElbow plot\n\n\n\n\n\nCLuster plot\n\n\n\n\n\nQuality Distribution across clusters\n\n\n\n\n\nSummary of all the Clusters\n\n\n# A tibble: 3 × 14\n  cluster fixed.acidity volatile.acidity citric.acid residual.sugar chlorides\n  &lt;fct&gt;           &lt;dbl&gt;            &lt;dbl&gt;       &lt;dbl&gt;          &lt;dbl&gt;     &lt;dbl&gt;\n1 1                6.22            0.277       0.288           3.37    0.0399\n2 2                6.96            0.282       0.363          11.1     0.0547\n3 3                7.43            0.274       0.350           3.93    0.0413\n# ℹ 8 more variables: free.sulfur.dioxide &lt;dbl&gt;, total.sulfur.dioxide &lt;dbl&gt;,\n#   density &lt;dbl&gt;, pH &lt;dbl&gt;, sulphates &lt;dbl&gt;, alcohol &lt;dbl&gt;,\n#   mean_quality &lt;dbl&gt;, sd_quality &lt;dbl&gt;\n\n\n\n\nCitation\nWine Quality - dataset by uci. (n.d.). Data.world. https://data.world/uci/wine-quality\n‌"
+  },
+  {
+    "objectID": "codes.html",
+    "href": "codes.html",
+    "title": "Codes",
+    "section": "",
+    "text": "FARS=data.frame( State=c(“Virginia”,“Maryland”,“West Virginia”,“Washington DC”), Male2021=c(699,407,204,33), Female2021=c(282,153,76,8), Unsupported2021=c(22,1,0,0), Male2018=c(593,363,208,24), Female2018=c(226,138,86,7), Unsupported2018=c(1,0,0,0), Male1988=c(776,562,322,45), Female1988=c(296,219,138,16), Unsupported=c(0,0,0,0))"
+  },
+  {
+    "objectID": "codes.html#create-a-dataset",
+    "href": "codes.html#create-a-dataset",
+    "title": "Codes",
+    "section": "",
+    "text": "FARS=data.frame( State=c(“Virginia”,“Maryland”,“West Virginia”,“Washington DC”), Male2021=c(699,407,204,33), Female2021=c(282,153,76,8), Unsupported2021=c(22,1,0,0), Male2018=c(593,363,208,24), Female2018=c(226,138,86,7), Unsupported2018=c(1,0,0,0), Male1988=c(776,562,322,45), Female1988=c(296,219,138,16), Unsupported=c(0,0,0,0))"
+  },
+  {
+    "objectID": "codes.html#specify-the-file-path-where-you-want-to-save-the-csv-file",
+    "href": "codes.html#specify-the-file-path-where-you-want-to-save-the-csv-file",
+    "title": "Codes",
+    "section": "Specify the file path where you want to save the CSV file",
+    "text": "Specify the file path where you want to save the CSV file\nfile_path=“FARS.csv”"
+  },
+  {
+    "objectID": "codes.html#write-the-data-frame-to-a-csv-file",
+    "href": "codes.html#write-the-data-frame-to-a-csv-file",
+    "title": "Codes",
+    "section": "Write the data frame to a CSV file",
+    "text": "Write the data frame to a CSV file\nwrite.csv(FARS, file = file_path, row.names = FALSE)"
+  },
+  {
+    "objectID": "codes.html#read-the-csv-file",
+    "href": "codes.html#read-the-csv-file",
+    "title": "Codes",
+    "section": "Read the CSV file",
+    "text": "Read the CSV file\nFARS=read.csv(“C:/Users/hp/Desktop/R/proj script/FARS.csv”)"
+  },
+  {
+    "objectID": "codes.html#install-packages",
+    "href": "codes.html#install-packages",
+    "title": "Codes",
+    "section": "Install Packages",
+    "text": "Install Packages\ninstall.packages(“tidyr”)\ninstall.packages(“plotly”)\nlibrary(tidyr)\nlibrary(plotly)"
+  },
+  {
+    "objectID": "codes.html#redesigning-the-plots",
+    "href": "codes.html#redesigning-the-plots",
+    "title": "Codes",
+    "section": "Redesigning the Plots",
+    "text": "Redesigning the Plots\n\nRedesign 1\n(plot1 = plot_ly(FARS, x = ~State, y = ~Male2021, type = ‘bar’, name = ‘Male’, marker = list(color = ‘rgb(49,130,189)’)) %&gt;% add_trace(y = ~Female2021, name = ‘Female’, marker = list(color = ‘rgb(204,204,204)’)) %&gt;% add_trace(y = ~Unsupported2021, name = ‘Unsupported’, marker = list(color = ‘rgb(300,000,01)’)) %&gt;% layout(xaxis = list(title = “DMV States”, tickangle = -45), yaxis = list(title = “Number of people killed”), margin = list(b = 100), barmode = ‘group’, title=“Persons killed in 2021”))\n(plot2 = plot_ly(FARS, x = ~State, y = ~Male2018, type = ‘bar’, name = ‘Male’, marker = list(color = ‘rgb(49,130,189)’)) %&gt;% add_trace(y = ~Female2018, name = ‘Female’, marker = list(color = ‘rgb(204,204,204)’)) %&gt;% add_trace(y = ~Unsupported2018, name = ‘Unsupported’, marker = list(color = ‘rgb(300,00,01)’)) %&gt;% layout(xaxis = list(title = “DMV States”, tickangle = -45), yaxis = list(title = “Number of people killed”), margin = list(b = 100), barmode = ‘group’, title=“Persons killed in 2018”))\n(plot3 = plot_ly(FARS, x = ~State, y = ~Male1988, type = ‘bar’, name = ‘Male’, marker = list(color = ‘rgb(49,130,189)’)) %&gt;% add_trace(y = ~Female1988, name = ‘Female’, marker = list(color = ‘rgb(204,204,204)’)) %&gt;% add_trace(y = ~Unsupported, name = ‘Unsupported’, marker = list(color = ‘rgb(300,00,01)’)) %&gt;% layout(xaxis = list(title = “DMV States”, tickangle = -45), yaxis = list(title = “Number of people killed”), margin = list(b = 100), barmode = ‘group’, title=“Persons killed in 1988”))\n\n\nRedesign 2\nplot4=plot_ly(FARS, x = ~State, type = ‘bar’, name = ‘Male’, y = ~Male2021, marker = list(color = ‘blue’)) %&gt;% add_trace(y = ~Female2021, name = ‘Female’, marker = list(color = ‘pink’)) %&gt;% add_trace(y = ~Unsupported2021, name = ‘Unsupported’, marker = list(color = ‘Orange’)) %&gt;% layout(title = “Persons Killed in 2021”, xaxis = list(title = “DMV States”), yaxis = list(title = “Number of people killed”), barmode = ‘stack’)\nplot4\nplot5=plot_ly(FARS, x = ~State, type = ‘bar’, name = ‘Male’, y = ~Male2018, marker = list(color = ‘blue’)) %&gt;% add_trace(y = ~Female2018, name = ‘Female’, marker = list(color = ‘pink’)) %&gt;% add_trace(y = ~Unsupported2018, name = ‘Unsupported’, marker = list(color = ‘Orange’)) %&gt;% layout(title = “Persons Killed in 2018”, xaxis = list(title = “DMV States”), yaxis = list(title = “Number of people killed”), barmode = ‘stack’)\nplot5\nplot6=plot_ly(FARS, x = ~State, type = ‘bar’, name = ‘Male’, y = ~Male1988, marker = list(color = ‘blue’)) %&gt;% add_trace(y = ~Female1988, name = ‘Female’, marker = list(color = ‘pink’)) %&gt;% add_trace(y = ~Unsupported, name = ‘Unsupported’, marker = list(color = ‘Orange’)) %&gt;% layout(title = “Persons Killed in 1988”, xaxis = list(title = “DMV States”), yaxis = list(title = “Number of people killed”), barmode = ‘stack’)\nplot6"
+  },
+  {
+    "objectID": "codes.html#data-set",
+    "href": "codes.html#data-set",
+    "title": "Codes",
+    "section": "Data set",
+    "text": "Data set\nI have created a Dataset with the help of the actual Dataset taken from the source. The reason to do this was to work from the base for the project."
+  },
+  {
+    "objectID": "Fcodes.html",
+    "href": "Fcodes.html",
+    "title": "FCodes",
+    "section": "",
+    "text": "library(ggplot2)\n\n\n\nwine_data &lt;- read.csv(“C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv”, sep = “;”)\n\n\n\nggplot(wine_data, aes(x = as.factor(quality))) +geom_bar(fill = “steelblue”, color = “black”) +\nlabs(title = “Distribution of Quality Scores”, x = “Quality”, y = “Count”) +theme_minimal()\n\n\n\n\n\nggplot(wine_data, aes(x = fixed.acidity)) + geom_histogram(binwidth = 0.1, fill = “skyblue”, color = “black”) + (title = “Distribution of Fixed Acidity”, x = “Fixed Acidity”, y = “Count”) + theme_minimal()\n\n\n\nggplot(wine_data, aes(x = volatile.acidity)) + geom_histogram(binwidth = 0.05, fill = “lightcoral”, color = “black”) +labs(title = “Distribution of Volatile Acidity”, x = “Volatile Acidity”, y = “Count”) +theme_minimal()\n\n\n\nggplot(wine_data, aes(x = citric.acid)) + geom_histogram(binwidth = 0.05, fill = “blue”, color = “black”) + (title = “Distribution of Citric Acid”, x = “Citric Acid”, y = “Count”) + theme_minimal()\n\n\n\n\nggplot(wine_data, aes(x = residual.sugar)) + geom_histogram(binwidth = 0.5, fill = “lightblue”, color = “black”) + (title = “Distribution of Residual Sugar”, x = “Residual Sugar”, y = “Count”) + theme_minimal()\n\n\n\nggplot(wine_data, aes(x = chlorides)) + geom_histogram(binwidth = 0.005, fill = “purple”, color = “black”) + (title = “Distribution of Chlorides”, x = “Chlorides”, y = “Count”) + theme_minimal()\n\n\n\n\n\nggplot(wine_data, aes(x = free.sulfur.dioxide)) + geom_histogram(binwidth = 2, fill = “green”, color = “black”) + (title = “Distribution of Free Sulfur Dioxide”, x = “Free Sulfur Dioxide”, y = “Count”) +theme_minimal()\n\n\n\nggplot(wine_data, aes(x = total.sulfur.dioxide)) + geom_histogram(binwidth = 5, fill = “pink”, color = “black”) + s(title = “Distribution of Total Sulfur Dioxide”, x = “Total Sulfur Dioxide”, y = “Count”) + theme_minimal()\n\n\n\n\nggplot(wine_data, aes(x = density)) + geom_histogram(binwidth = 0.0001, fill = “yellow”, color = “green”) + labs(title = “Distribution of Density”, x = “Density”, y = “Count”) + theme_minimal()\n\n\n\nggplot(wine_data, aes(x = pH)) + geom_histogram(binwidth = 0.1, fill = “red”, color = “black”) + # Adjust binwidth as needed labs(title = “Distribution of pH values”, x = “pH”, y = “Count”) + theme_minimal()\n\n\n\nggplot(wine_data, aes(x = sulphates)) + geom_histogram(binwidth = 0.05, fill = “lightgreen”, color = “black”) + (title = “Distribution of Sulphates”, x = “Sulphates”, y = “Count”) + theme_minimal()\n\n\n\nggplot(wine_data, aes(x = alcohol)) + geom_histogram(binwidth = 0.2, fill = “orange”, color = “black”) + labs(title = “Distribution of Alcohol”, x = “Alcohol”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#packages-installed",
+    "href": "Fcodes.html#packages-installed",
+    "title": "FCodes",
+    "section": "",
+    "text": "library(ggplot2)"
+  },
+  {
+    "objectID": "Fcodes.html#reading-the-dataset",
+    "href": "Fcodes.html#reading-the-dataset",
+    "title": "FCodes",
+    "section": "",
+    "text": "wine_data &lt;- read.csv(“C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv”, sep = “;”)"
+  },
+  {
+    "objectID": "Fcodes.html#distribution-of-quality-scores",
+    "href": "Fcodes.html#distribution-of-quality-scores",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = as.factor(quality))) +geom_bar(fill = “steelblue”, color = “black”) +\nlabs(title = “Distribution of Quality Scores”, x = “Quality”, y = “Count”) +theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#acidity",
+    "href": "Fcodes.html#acidity",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = fixed.acidity)) + geom_histogram(binwidth = 0.1, fill = “skyblue”, color = “black”) + (title = “Distribution of Fixed Acidity”, x = “Fixed Acidity”, y = “Count”) + theme_minimal()\n\n\n\nggplot(wine_data, aes(x = volatile.acidity)) + geom_histogram(binwidth = 0.05, fill = “lightcoral”, color = “black”) +labs(title = “Distribution of Volatile Acidity”, x = “Volatile Acidity”, y = “Count”) +theme_minimal()\n\n\n\nggplot(wine_data, aes(x = citric.acid)) + geom_histogram(binwidth = 0.05, fill = “blue”, color = “black”) + (title = “Distribution of Citric Acid”, x = “Citric Acid”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#distribution-of-residual-sugar",
+    "href": "Fcodes.html#distribution-of-residual-sugar",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = residual.sugar)) + geom_histogram(binwidth = 0.5, fill = “lightblue”, color = “black”) + (title = “Distribution of Residual Sugar”, x = “Residual Sugar”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#distribution-of-chlorides",
+    "href": "Fcodes.html#distribution-of-chlorides",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = chlorides)) + geom_histogram(binwidth = 0.005, fill = “purple”, color = “black”) + (title = “Distribution of Chlorides”, x = “Chlorides”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#sulfur-dioxide",
+    "href": "Fcodes.html#sulfur-dioxide",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = free.sulfur.dioxide)) + geom_histogram(binwidth = 2, fill = “green”, color = “black”) + (title = “Distribution of Free Sulfur Dioxide”, x = “Free Sulfur Dioxide”, y = “Count”) +theme_minimal()\n\n\n\nggplot(wine_data, aes(x = total.sulfur.dioxide)) + geom_histogram(binwidth = 5, fill = “pink”, color = “black”) + s(title = “Distribution of Total Sulfur Dioxide”, x = “Total Sulfur Dioxide”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#distribution-of-density",
+    "href": "Fcodes.html#distribution-of-density",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = density)) + geom_histogram(binwidth = 0.0001, fill = “yellow”, color = “green”) + labs(title = “Distribution of Density”, x = “Density”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#distribution-of-ph-values",
+    "href": "Fcodes.html#distribution-of-ph-values",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = pH)) + geom_histogram(binwidth = 0.1, fill = “red”, color = “black”) + # Adjust binwidth as needed labs(title = “Distribution of pH values”, x = “pH”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#distribution-of-sulphates",
+    "href": "Fcodes.html#distribution-of-sulphates",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = sulphates)) + geom_histogram(binwidth = 0.05, fill = “lightgreen”, color = “black”) + (title = “Distribution of Sulphates”, x = “Sulphates”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#distribution-of-alcohol",
+    "href": "Fcodes.html#distribution-of-alcohol",
+    "title": "FCodes",
+    "section": "",
+    "text": "ggplot(wine_data, aes(x = alcohol)) + geom_histogram(binwidth = 0.2, fill = “orange”, color = “black”) + labs(title = “Distribution of Alcohol”, x = “Alcohol”, y = “Count”) + theme_minimal()"
+  },
+  {
+    "objectID": "Fcodes.html#packages-installed-1",
+    "href": "Fcodes.html#packages-installed-1",
+    "title": "FCodes",
+    "section": "Packages installed",
+    "text": "Packages installed\ninstall.packages(“rpart”)\ninstall.packages(“ggplot2”)\ninstall.packages(“plotly”)\ninstall.packages(“rattle”)\nBased on different chemical properties, how do we classify white wines?"
+  },
+  {
+    "objectID": "Fcodes.html#reading-the-dataset-1",
+    "href": "Fcodes.html#reading-the-dataset-1",
+    "title": "FCodes",
+    "section": "Reading the dataset",
+    "text": "Reading the dataset\ndf_whitewine &lt;- read.csv(“C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv”, sep = “;”, header = TRUE)\nrenaming the column names accordingly for a better accuracy\ndf_whitewine &lt;- df_whitewine %&gt;% rename( fixed_acidity = fixed.acidity, volatile_acidity = volatile.acidity, citric_acid = citric.acid, residual_sugar = residual.sugar, chlorides = chlorides, free_sulfur_dioxide = free.sulfur.dioxide, total_sulfur_dioxide = total.sulfur.dioxide, density = density, pH = pH, sulphates = sulphates, alcohol = alcohol, quality = quality )"
+  },
+  {
+    "objectID": "Fcodes.html#summary-of-the-dataset",
+    "href": "Fcodes.html#summary-of-the-dataset",
+    "title": "FCodes",
+    "section": "Summary of the dataset",
+    "text": "Summary of the dataset\nhead(df_whitewine,2)\nsapply(df_whitewine,class)\nsummary(df_whitewine)"
+  },
+  {
+    "objectID": "Fcodes.html#check-the-distribution-of-data-and-plot-a-histogram",
+    "href": "Fcodes.html#check-the-distribution-of-data-and-plot-a-histogram",
+    "title": "FCodes",
+    "section": "Check the distribution of data and plot a histogram",
+    "text": "Check the distribution of data and plot a histogram\nquality_freq &lt;- as.data.frame(table(df_whitewine$quality)) colnames(quality_freq) &lt;- c(“quality”, “frequency”)\nplot_ly(data = quality_freq, x = ~quality, y = ~frequency, type = “bar”, name = “Frequency”, marker = list(color = “orange”)) %&gt;% layout( title = “Data Available by Wine Class”, xaxis = list(title = “Quality”), yaxis = list(title = “Frequency”) ) %&gt;% add_lines(x = ~quality, y = ~frequency, type = “scatter”, mode = “lines”, name = “Smooth Curve”, line = list(color = “brown”, shape = “spline”))\n\nDecision Tree Classification\nModel building and training Setup\nset.seed(100)\ndata_set_size = floor(nrow(df_whitewine)*0.80) #use 20% of data for testing\nindex &lt;- sample(1:nrow(df_whitewine),size = data_set_size) #get a sample for row size, dataset size, etc\ntraining_data &lt;- df_whitewine[index,]\ntesting_data &lt;- df_whitewine[-index,]\n–DT classifier–\nDecision Tree via rpart\ndcsntree &lt;- rpart(quality ~ ., data = training_data)\nVisualize the decision tree\nfancyRpartPlot(dcsntree)\nPrediction using decision tree\ndf_whitewine_pred &lt;- predict(dcsntree, testing_data)\n#df_whitewine_pred\nCheck levels of actual and predicted data\nlevels_actual &lt;- levels(as.factor(testing_data$quality))\nlevels_predicted &lt;- levels(as.factor(df_whitewine_pred))\n#print(“Levels in actual data:”,print(levels_actual))\n#print(“Levels in predicted data:”, print(levels_predicted))\nCorrect numerical levels to integer levels\ndf_whitewine_pred_factor &lt;- cut(df_whitewine_pred, breaks = length(levels_actual), labels = levels_actual)\nCccuracy, Specificity, Precision ,etc of the model\nconf_dcsntree &lt;- confusionMatrix(as.factor(testing_data$quality), df_whitewine_pred_factor, mode = “everything”)\nprint(conf_dcsntree)\nEvaluate accuracy\naccuracy &lt;- sum(df_whitewine_pred_factor == testing_data$quality) / nrow(testing_data) print(paste(“Decision Tree Accuracy:”, round(accuracy * 100, 2), “%”))\nTo see if pruning the decision tree improves the accuracy score,\nPrune the decision tree by adjusting the complexity parameter\ndcsntree_pruned &lt;- prune(dcsntree, cp = 0.01) # Adjust cp value as needed\nVisualize the pruned decision tree\nfancyRpartPlot(dcsntree_pruned)\n#b.\nPrediction using pruned decision tree\ndf_whitewine_pred_pruned &lt;- predict(dcsntree_pruned, testing_data)\nCorrect numerical levels to integer levels\ndf_whitewine_pred_factor_pruned &lt;- cut(df_whitewine_pred_pruned, breaks = length(levels_actual), labels = levels_actual)\nCalculate accuracy of the pruned decision tree\naccuracy_pruned &lt;- sum(df_whitewine_pred_factor_pruned == as.factor(testing_data\\(quality)) / length(testing_data\\)quality)\nprint(paste(“Accuracy of the pruned decision tree:”, round(accuracy_pruned*100,2), “%”))\n\n\nRandom Forest Classification\nRead the dataset\ndf_whitewine &lt;- read.csv(“C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv”, sep = “;”, header = TRUE)\nrenaming the column names accordingly for a better accuracy\ndf_whitewine &lt;- df_whitewine %&gt;% rename( fixed_acidity = fixed.acidity, volatile_acidity = volatile.acidity, citric_acid = citric.acid, residual_sugar = residual.sugar, chlorides = chlorides, free_sulfur_dioxide = free.sulfur.dioxide, total_sulfur_dioxide = total.sulfur.dioxide, density = density, pH = pH, sulphates = sulphates, alcohol = alcohol, quality = quality )\nMake quality column a factor\ndf_whitewine\\(quality = as.factor(df_whitewine\\)quality)\nTraining data\ndata_set_size = floor(nrow(df_whitewine)*0.80) #use 20% of data for testing\nindex &lt;- sample(1:nrow(df_whitewine),size = data_set_size) #get a sample for row size, dataset size, etc training_data_rf &lt;- df_whitewine[index,]\ntesting_data_rf &lt;- df_whitewine[-index,]\ndim(training_data_rf)\ndim(testing_data_rf)\n#2. Random Forest classification\nFit random forest (rf) model\nrandom_forest_model &lt;- randomForest(formula = quality ~ ., data = training_data_rf, mtry=4, ntree=2001, importance=TRUE)\nAnalyze results\nrandom_forest_model\nDisplay accuracy of random forest model\noob_error_rate &lt;- random_forest_model\\(err.rate[nrow(random_forest_model\\)err.rate), “OOB”] accuracy &lt;- 1 - oob_error_rate\nprint(paste(“Accuracy of RandomForest Model:”, round(accuracy * 100, 2), “%”))\nplot(random_forest_model)\nPrediction using rf model\nwine_rf_result &lt;- data.frame(testing_data_rf$quality, predict(random_forest_model, testing_data_rf[,1:11], type= “response”))\nconf_matrix &lt;-table(wine_rf_result$testing_data_rf.quality,wine_rf_result$predict.random_forest_model..testing_data_rf…1.11…type….response..)\nconf_matrix_matrix &lt;- as.matrix(conf_matrix)\nPlot the graph\nplot(wine_rf_result)\nConfusion matrix heat map\nplot_ly(z = ~conf_matrix_matrix, colorscale = “Viridis”) %&gt;% add_heatmap(x = rownames(conf_matrix_matrix), y = colnames(conf_matrix_matrix)) %&gt;% layout(title = “Confusion Matrix Heatmap”, xaxis = list(title = “Actual Quality”), yaxis = list(title = “Predicted Quality”))\nVariable importance\nvarImpPlot(random_forest_model)"
+  },
+  {
+    "objectID": "Fcodes.html#shiny-app",
+    "href": "Fcodes.html#shiny-app",
+    "title": "FCodes",
+    "section": "Shiny App",
+    "text": "Shiny App\nInstall libraries\nlibrary(randomForest)\nlibrary(shiny)\nlibrary(plotly)\nlibrary(shinythemes)\nDefine UI\nui &lt;- fluidPage( theme = shinytheme(\"cerulean\"), # Set the theme to 'united' navbarPage( theme = 'cerulean', 'White Wine Quality Classifier',tabPanel(\"Predictions\",\n         h4(\"Interactive Tool\"),\n         fluidRow(\n           column(10, \n                  helpText('Choose a value for each slider to get wine quality.(This data only predicts white wine quality using RandomForest)'),\n                  helpText(\"Predictions: Grades below 4 (Low Quality) | Grades from 4 to 6 (Moderate Quality) | Grades above 6 (High Quality).\")),\n           column(3,\n                  sliderInput(\"slider_acidity\", 'Fixed Acidity',\n                              min = min(df_whitewine$fixed_acidity), max = max(df_whitewine$fixed_acidity), value = 7.0),\n                  sliderInput(\"slider_volatile_acidity\", \"Volatile Acidity\",\n                              min = min(df_whitewine$volatile_acidity), max = max(df_whitewine$volatile_acidity), value = 0.27),\n                  sliderInput(\"slider_citric_acid\", 'Citric Acid',\n                              min = min(df_whitewine$citric_acid), max = max(df_whitewine$citric_acid), value = 0.36),\n                  sliderInput(\"slider_residual_sugar\", \"Residual Sugar\",\n                              min = min(df_whitewine$residual_sugar), max = max(df_whitewine$residual_sugar), value = 20.7),\n                  sliderInput(\"slider_chlorides\", 'Chlorides',\n                              min = min(df_whitewine$chlorides), max = max(df_whitewine$chlorides), value = 0.045)\n           ),\n           column(3,\n                  sliderInput(\"slider_free_sulfur_dioxide\", 'Free Sulfur Dioxide',\n                              min = min(df_whitewine$free_sulfur_dioxide), max = max(df_whitewine$free_sulfur_dioxide), value = 45),\n                  sliderInput(\"slider_total_sulfur_dioxide\", \"Total Sulfur Dioxide\",\n                              min = min(df_whitewine$total_sulfur_dioxide), max = max(df_whitewine$total_sulfur_dioxide), value = 170),\n                  sliderInput(\"slider_density\", 'Density',\n                              min = min(df_whitewine$density), max = max(df_whitewine$density), value = 1.001),\n                  sliderInput(\"slider_ph\", \"pH\",\n                              min = min(df_whitewine$pH), max = max(df_whitewine$pH), value = 3.00),\n                  sliderInput(\"slider_sulphates\", 'Sulphates',\n                              min = min(df_whitewine$sulphates), max = max(df_whitewine$sulphates), value = 0.45)\n           ),\n           column(3,\n                  sliderInput(\"slider_alcohol\", 'Alcohol',\n                              min = min(df_whitewine$alcohol), max = max(df_whitewine$alcohol), value = 8.8)\n           ),\n           mainPanel(\n             h4('Your Choices'),\n             tableOutput('showchoices'),\n             h1(tableOutput('prediction'))\n           )\n         ) # Predictions tabPanel\n) # navbarPage\n)) # fluidPage\nDefine server logic\nserver &lt;- function(input, output) {\n# Piece of code for the Prediction\noutput$prediction &lt;- renderTable({\n  # Create a dataframe for prediction\n  datapred &lt;- data.frame(\n    fixed_acidity = input$slider_acidity,\n    volatile_acidity = input$slider_volatile_acidity,\n    citric_acid = input$slider_citric_acid,\n    residual_sugar = input$slider_residual_sugar,\n    chlorides = input$slider_chlorides,\n    free_sulfur_dioxide = input$slider_free_sulfur_dioxide,\n    total_sulfur_dioxide = input$slider_total_sulfur_dioxide,\n    density = input$slider_density,\n    pH = input$slider_ph,\n    sulphates = input$slider_sulphates,\n    alcohol = input$slider_alcohol\n  )\n  # Predict using the random forest model or any other model you have\n  # Replace \"random_forest_model\" with your actual model object\n  prediction &lt;- predict(random_forest_model, datapred)\n  # Create a dataframe with predicted wine quality\n  data.frame('Predicted_White_Wine_Quality' = prediction)\n})\n}\nRun the application\nshinyApp(ui = ui, server = server)"
+  },
+  {
+    "objectID": "Fcodes.html#reading-the-dataset-2",
+    "href": "Fcodes.html#reading-the-dataset-2",
+    "title": "FCodes",
+    "section": "Reading the dataset",
+    "text": "Reading the dataset\ndf &lt;- read.csv(“C:/Users/hp/Desktop/STAT/Final Project/winequality-white.csv”, sep = “;”, header = TRUE)\nstr(df)"
+  },
+  {
+    "objectID": "Fcodes.html#removing-data-where-value-of-quality-3489",
+    "href": "Fcodes.html#removing-data-where-value-of-quality-3489",
+    "title": "FCodes",
+    "section": "Removing data where value of quality = [3,4,8,9]",
+    "text": "Removing data where value of quality = [3,4,8,9]\ndf &lt;- df[(df$quality %in% c(5,6,7)), ]"
+  },
+  {
+    "objectID": "Fcodes.html#converting-the-response-variable-quality-into-a-factor-variable",
+    "href": "Fcodes.html#converting-the-response-variable-quality-into-a-factor-variable",
+    "title": "FCodes",
+    "section": "Converting the response variable Quality into a factor variable",
+    "text": "Converting the response variable Quality into a factor variable\ndf\\(quality &lt;- factor(df\\)quality)\nstr (df)"
+  },
+  {
+    "objectID": "Fcodes.html#printing-the-distribution-of-the-response-variable",
+    "href": "Fcodes.html#printing-the-distribution-of-the-response-variable",
+    "title": "FCodes",
+    "section": "Printing the distribution of the response variable",
+    "text": "Printing the distribution of the response variable\ntable(df$quality)"
+  },
+  {
+    "objectID": "Fcodes.html#visualizing-the-features-using-a-pair-plot",
+    "href": "Fcodes.html#visualizing-the-features-using-a-pair-plot",
+    "title": "FCodes",
+    "section": "Visualizing the features using a pair plot",
+    "text": "Visualizing the features using a pair plot\nwineClasses &lt;- factor(df$quality)\npairs(df[, -which(names(df) == “quality”)], col = wineClasses, upper.panel = NULL, pch = 16, cex = 0.5)"
+  },
+  {
+    "objectID": "Fcodes.html#add-legend",
+    "href": "Fcodes.html#add-legend",
+    "title": "FCodes",
+    "section": "Add legend",
+    "text": "Add legend\nlegend(“topright”, bty = “n”, legend = levels(wineClasses), pch = 16, col = rainbow(length(levels(wineClasses))), xpd = TRUE, cex = 1.5, y.intersp = 0.5)"
+  },
+  {
+    "objectID": "Fcodes.html#applying-pca",
+    "href": "Fcodes.html#applying-pca",
+    "title": "FCodes",
+    "section": "Applying PCA",
+    "text": "Applying PCA\ndf_PCA &lt;- prcomp(df[, 1:11],center=TRUE,scale=TRUE)\nsummary(df_PCA)"
+  },
+  {
+    "objectID": "Fcodes.html#plotting-the-first-2-principal-components",
+    "href": "Fcodes.html#plotting-the-first-2-principal-components",
+    "title": "FCodes",
+    "section": "Plotting the first 2 Principal Components",
+    "text": "Plotting the first 2 Principal Components\nplot(df_PCA$x[,1:2], col = wineClasses)"
+  },
+  {
+    "objectID": "Fcodes.html#plotting-a-fancy-biplot-using-devtools-and-ggbiplot",
+    "href": "Fcodes.html#plotting-a-fancy-biplot-using-devtools-and-ggbiplot",
+    "title": "FCodes",
+    "section": "Plotting a Fancy Biplot using devtools and ggbiplot",
+    "text": "Plotting a Fancy Biplot using devtools and ggbiplot\nlibrary(devtools)\nif(!require(ggbiplot)){ install_github(“vqv/ggbiplot”) library(ggbiplot) }\nggbiplot(df_PCA,ellipse=TRUE, groups=wineClasses) std_dev &lt;- df_PCA$sdev"
+  },
+  {
+    "objectID": "Fcodes.html#scree-plots",
+    "href": "Fcodes.html#scree-plots",
+    "title": "FCodes",
+    "section": "Scree Plots",
+    "text": "Scree Plots\ncompute proportion of variance\npr_var &lt;- std_dev^2\npve &lt;- pr_var/sum(pr_var)\n\nPlotting the Scree Plots together in a single grid\nlibrary(gridExtra) x = 1:length(pve) g1 =qplot(x,pve, xlab=“Principal Component”, ylab=“Proportion of Variance Explained”) + geom_line()+geom_point(shape=21,fill=“red”,cex=3)\ng2 =qplot(x,cumsum(pve), xlab=“Principal Component”, ylab=“Cumulative Proportion of Variance Explained”, main=” “,ylim=c(0,1))+ geom_line()+geom_point(shape=21,fill=”red”,cex=3)\ngrid.arrange(g1,g2, nrow=1)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Meghjeet Kaur",
+    "section": "",
+    "text": "I Meghjeet Kaur was a professional with a commendable five-year track record in project management. Known to adept organizational skills and strategic thinking, I have successfully navigated diverse projects, showcasing my ability to lead teams and deliver results. Eager to further enhance my skill set and delve into the dynamic realm of data analytics, I am currently pursuing a Master’s degree in the Data Analytics. This academic pursuit reflects my dedication to staying ahead of industry trends and equipping myself with the expertise needed to thrive in the rapidly evolving landscape of data-driven decision-making. My combination of project management experience and a commitment to ongoing education positions is promising professional ready to make a significant impact in the intersection of project management and data analytics."
+  }
+]
